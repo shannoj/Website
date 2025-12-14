@@ -11,10 +11,16 @@
 			body {
 				overflow-y: auto !important;
 			}
+			#wrapper {
+				opacity: 1 !important;
+				position: relative !important;
+				height: auto !important;
+			}
 			#main {
 				position: relative !important;
 				height: auto !important;
 				overflow: visible !important;
+				text-align: left !important;
 			}
 			#main:before {
 				display: none !important;
@@ -26,6 +32,8 @@
 				padding: 40px 20px;
 				display: block;
 				text-align: left;
+				position: relative;
+				z-index: 2;
 			}
 			.project-card {
 				background: rgba(255, 255, 255, 0.05);
