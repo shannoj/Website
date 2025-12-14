@@ -7,10 +7,25 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* Override main.css for projects page */
+			body {
+				overflow-y: auto !important;
+			}
+			#main {
+				position: relative !important;
+				height: auto !important;
+				overflow: visible !important;
+			}
+			#main:before {
+				display: none !important;
+			}
+
 			.projects-container {
 				max-width: 1200px;
 				margin: 0 auto;
 				padding: 40px 20px;
+				display: block;
+				text-align: left;
 			}
 			.project-card {
 				background: rgba(255, 255, 255, 0.05);
